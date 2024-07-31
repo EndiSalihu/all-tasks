@@ -1,0 +1,120 @@
+.popup-button {
+  float: right;
+  margin: 20px 100px;
+  background-color: gray;
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444444;
+}
+
+.overlay .popup {
+  padding: 20px;
+  width: 800px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay .popup header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overlay .popup header p {
+  color: rgb(55, 108, 199);
+}
+
+.overlay .popup menu {
+  padding: 30px 0px 50px;
+}
+
+.overlay .popup menu .details {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.overlay .popup  menu .details p span {
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 5px 25px;
+  background-color: red;
+  border: 0.5px solid rgb(195, 193, 193);
+}
+
+.overlay .popup .cancel,
+.save {
+  font-size: 15px;
+  padding: 9px;
+  width: 110px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.overlay .popup .cancel {
+  border: 1px solid rgb(209, 207, 207);
+  background-color: transparent;
+}
+
+.overlay .popup .save {
+  color: white;
+  background-color: #0053d1;
+  margin-left: 10px;
+  border: none;
+}
+
+
+@media (width <= 820px) {
+  .overlay .popup {
+    width: 600px;
+  }
+}
+
+@media (width <= 640px) {
+  .overlay .popup {
+    width: 500px;
+  }
+
+  .overlay .popup header h1 {
+    font-size: 20px;
+  }
+}
+
+@media (width <= 525px) {
+  .overlay .popup {
+    width: 400px;
+  }
+
+  .overlay .popup menu .details h3, p{
+    font-size: 14px;
+  }
+}
+
+@media (width <= 425px) {
+  .overlay .popup {
+    width: 330px;
+  }
+}

@@ -1,0 +1,80 @@
+#box-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20vh;
+  gap: 30px;
+  height: screen;
+}
+
+#box-content .box {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: space-between;
+  border: 1px solid rgb(148, 148, 148);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+#box-content .box .setting{
+  width: max-content;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 25px;
+}
+
+#box-content .box  header{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#box-content .box  header img{
+  width: 35px;
+}
+
+#box-content .box  .description{
+  color: gray;
+}
+
+#box-content .box  button {
+  width: 150px;
+  padding: 10px 25px;
+  color: rgb(31, 124, 156);
+  border: 1px solid rgb(31, 124, 156);
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
+@media (width <= 620px){
+  #box-content {
+    margin: 10vh;
+  }
+  #box-content .box .setting{
+    padding: 3px 15px;
+  }
+}
+
+@media (width <= 460px){
+  #box-content {
+    margin: 5vh;
+  }
+}
+
+@media (width <= 375px){
+  #box-content {
+    margin: 2vh;
+  }
+
+  #box-content .box {
+    width: 280px;
+    gap: 25px;
+    justify-content: space-between;
+  }
+}
+
+

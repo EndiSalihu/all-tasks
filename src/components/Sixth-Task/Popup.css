@@ -27,7 +27,7 @@
 
 .overlay .popup {
   padding: 1.2rem;
-  width: 48rem;
+  width: min(60rem, 95%);
   height: 35rem;
   background-color: white;
   border-radius: 10px;
@@ -90,35 +90,14 @@
   border: none;
 }
 
-
-@media (width <= 820px) {
-  .overlay .popup {
-    width: 36rem;
-  }
-}
-
 @media (width <= 640px) {
-  .overlay .popup {
-    width: 26rem;
-  }
-
   .overlay .popup header h1 {
     font-size: 1.2rem;
   }
 }
 
 @media (width <= 525px) {
-  .overlay .popup {
-    width: 23rem;
-  }
-
   .overlay .popup menu .details h3, p{
     font-size: 0.88rem;
-  }
-}
-
-@media (width <= 425px) {
-  .overlay .popup {
-    width: 19.5rem;
   }
 }

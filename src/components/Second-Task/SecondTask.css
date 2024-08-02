@@ -2,19 +2,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20vh;
-  gap: 30px;
-  height: screen;
+  margin: 12rem 2rem 12rem 2rem;
+  gap: 50px;
 }
 
 #box-content .box {
-  width: 380px;
+  width: min(430px, 95%);
+  height: 300px;
   display: flex;
   flex-direction: column;
   gap: 25px;
   justify-content: space-between;
   border: 1px solid rgb(148, 148, 148);
-  padding: 25px;
+  padding: 25px 10px;
   border-radius: 15px;
 }
 
@@ -22,17 +22,22 @@
   width: max-content;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 25px;
+  padding: 5px 10px;
 }
 
 #box-content .box  header{
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1rem;
+}
+
+
+#box-content .box  header h3{
+  font-size: 0.95rem;
 }
 
 #box-content .box  header img{
-  width: 35px;
+  width: 2rem;
 }
 
 #box-content .box  .description{
@@ -40,7 +45,7 @@
 }
 
 #box-content .box  button {
-  width: 150px;
+  width: max(12rem, 60%);
   padding: 10px 25px;
   color: rgb(31, 124, 156);
   border: 1px solid rgb(31, 124, 156);
@@ -49,32 +54,11 @@
   background-color: transparent;
 }
 
-
-@media (width <= 620px){
-  #box-content {
-    margin: 10vh;
-  }
-  #box-content .box .setting{
-    padding: 3px 15px;
-  }
-}
-
-@media (width <= 460px){
-  #box-content {
-    margin: 5vh;
-  }
-}
-
-@media (width <= 375px){
-  #box-content {
-    margin: 2vh;
-  }
-
+@media(max-width: 365px){
   #box-content .box {
-    width: 280px;
-    gap: 25px;
-    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    align-items: center;
   }
 }
-
 

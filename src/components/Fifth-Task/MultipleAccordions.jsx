@@ -1,5 +1,4 @@
 import { useState } from "react";
-import './MultipleAccordions.css';
 import { multipleAccordion_data } from './multipleAccordionData.js';
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
@@ -42,7 +41,7 @@ const MultipleAccordions = () => {
                   {/* If the section within the main accordion is expanded, it renders the content within */}
                   {expandedSection[accordionIndex] === sectionIndex && (
                     <div>
-                      <p>{item.content}</p>
+                      <p className="accordion-content">{item.content}</p>
                     </div>
                   )}
                 </button>

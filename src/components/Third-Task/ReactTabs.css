@@ -11,16 +11,16 @@
   padding-bottom: 70px;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .react-tabs .tab-list .tab {
   cursor: pointer;
-  padding: 13px;
-  font-size: 0.90rem;
-  width: 9rem;
+  padding: 0px 1.5rem 1rem;
+  font-size: 0.75rem;
   text-align: center;
+  color: gray;
 }
 
 .react-tabs .tab-list .tab:hover {
@@ -58,6 +58,7 @@
   width: 220px;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .react-tabs .tab-panel .card button:hover {

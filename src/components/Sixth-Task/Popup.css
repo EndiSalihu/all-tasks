@@ -56,6 +56,10 @@
   padding-bottom: 0.95rem;
 }
 
+.overlay .popup menu .details h3, p{
+  font-size: 0.95rem;
+}
+
 .overlay .popup  menu .details p span {
   border-radius: 5px;
   margin-left: 0.8rem;
@@ -95,7 +99,7 @@
 
 @media (width <= 640px) {
   .overlay .popup {
-    width: 27rem;
+    width: 26rem;
   }
 
   .overlay .popup header h1 {
@@ -115,6 +119,6 @@
 
 @media (width <= 425px) {
   .overlay .popup {
-    width: 22rem;
+    width: 19.5rem;
   }
 }

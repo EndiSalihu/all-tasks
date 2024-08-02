@@ -1,6 +1,7 @@
 export const multipleAccordion_data = [
   {
-    title: 'Why Park a domain name in Parkname ?',
+    title: 'About Us',
+    paragraph: '4 titles in this Topic',
     items: [
       {
         title: 'How does Parkname separate itself from other domain name parking companies?',

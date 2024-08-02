@@ -20,6 +20,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: left;
+}
+
+.accordion-section .accordion-title h2{
+  font-size: 16px;
 }
 
 .accordion-section .accordion-content {

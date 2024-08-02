@@ -1,0 +1,20 @@
+.accordion-about-us {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.accordion-about-us .profile{
+  color: rgb(75, 98, 245);
+}
+
+.accordion-about-us div h1{
+  font-size: 20px;
+}
+
+
+.accordion-about-us p{
+  color: gray;
+  padding-top: 5px;
+}

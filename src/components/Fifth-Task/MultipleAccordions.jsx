@@ -2,6 +2,9 @@ import { useState } from "react";
 import { multipleAccordion_data } from './multipleAccordionData.js';
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
+import { CgProfile } from "react-icons/cg";
+import './MultipleAccordions.css';
+
 
 const MultipleAccordions = () => {
   const [expandedAccordion, setExpandedAccordion] = useState(null); // keeps track of which main accordion is expanded.
@@ -24,7 +27,13 @@ const MultipleAccordions = () => {
       {multipleAccordion_data.map((accordion, accordionIndex) => (
         <button key={accordionIndex}>
           <div className="accordion-title" onClick={() => handleAccordionClick(accordionIndex)}>
-            <h3>{accordion.title}</h3>
+            <div className="accordion-about-us">
+              <CgProfile size={40} className="profile"/>
+              <div>
+                <h1>{accordion.title}</h1>
+                <p>{accordion.paragraph}</p>
+              </div>
+            </div>
             <p>{expandedAccordion === accordionIndex ? <IoIosArrowUp size={25}/>  : <IoIosArrowDown size={25}/>}</p>
           </div>
 
@@ -34,7 +43,7 @@ const MultipleAccordions = () => {
               {accordion.items.map((item, sectionIndex) => (
                 <button key={sectionIndex}>
                   <div className="accordion-title" onClick={() => handleSectionClick(accordionIndex, sectionIndex)}>
-                    <h4>{item.title}</h4>
+                    <h2>{item.title}</h2>
                     <p>{expandedSection[accordionIndex] === sectionIndex ? <IoIosArrowUp size={25}/> : <IoIosArrowDown size={25}/>}</p>
                   </div>
 

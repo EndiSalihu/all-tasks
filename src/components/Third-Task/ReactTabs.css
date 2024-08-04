@@ -17,7 +17,7 @@
 
 .react-tabs .tab-list .tab {
   cursor: pointer;
-  padding: 0px 1.5rem 1rem;
+  padding: 0rem 1.5rem 1rem;
   font-size: 0.75rem;
   text-align: center;
   color: gray;
@@ -35,16 +35,19 @@
 
 .react-tabs .tab-panel {
   display: grid;
-  gap: 6.6rem;
-  flex-wrap: wrap;
+  gap: 2.7rem;
 }
 
 .react-tabs .tab-panel .card {
+  width: 280px;
+  padding: 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  border: 1px solid rgb(202, 201, 201); 
+  border-radius: 10px;
 }
 
 .react-tabs .tab-panel .card p:nth-child(3) {
@@ -68,13 +71,13 @@
   transform: translateY(-4px);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .react-tabs .tab-panel {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1279px) {
   .react-tabs .tab-panel {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -89,5 +92,24 @@
 @media (max-width: 767px) {
   .react-tabs .tab-panel {
     grid-template-columns: 1fr;
+  }
+}
+
+
+@media(max-width: 660px) {
+  .react-tabs .tab-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  
+  .react-tabs .tab-list .tab {
+    padding: 0rem 0.1rem 1rem;
+  }
+}
+
+@media(max-width: 555px) {
+  .react-tabs .tab-list {
+    grid-template-columns: 1fr 1fr;
   }
 }

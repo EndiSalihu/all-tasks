@@ -8,7 +8,7 @@
 }
 
 #card-section .card-box {
-  width: max(30rem, 30%);
+  width: max(30rem, 20%);
 }
 
 #card-section .card-box .card-item {
